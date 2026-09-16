@@ -43,6 +43,7 @@
       </button>
       <ul class="nav-links">
         <li><a href="#work">Work</a></li>
+        <li><a href="#why">Why us</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#faq">FAQ</a></li>
@@ -66,11 +67,6 @@
             <a href="#contact" class="btn btn-primary btn-lg magnetic">Start a project</a>
             <a href="#work" class="btn btn-ghost btn-lg magnetic">See our work</a>
           </div>
-          <dl class="hero-stats hero-anim">
-            <div class="stat"><dt><span class="count" data-count="1">0</span></dt><dd>Flagship product live</dd></div>
-            <div class="stat"><dt><span class="count" data-count="2">0</span></dt><dd>Platforms shipped — web &amp; iOS</dd></div>
-            <div class="stat"><dt>100%</dt><dd>Senior engineers, zero hand-offs</dd></div>
-          </dl>
         </div>
         <div class="hero-visual hero-anim" data-tilt="7">
           <img src="assets/hero-3d.webp" alt="Abstract 3D render of glowing geometric shapes" fetchpriority="high" />
@@ -143,12 +139,57 @@
       </div>
     </section>
 
+    <!-- WHY -->
+    <section class="section section-alt" id="why">
+      <div class="container">
+        <p class="eyebrow reveal">Why SVR ONE</p>
+        <h2 class="reveal">Product builders first,<br />vendors second.</h2>
+        <p class="section-lede reveal">We operate our own products alongside client work — so every engagement is shaped by judgment earned in production, not slide-deck theory.</p>
+        <div class="why-grid">
+          <article class="why-card reveal" data-tilt="4">
+            <span class="why-num">01</span>
+            <h3>Product builders, not order-takers</h3>
+            <p>We run SVR Deals in production every day. Client work gets battle-tested judgment — what actually scales, converts, and survives real users.</p>
+          </article>
+          <article class="why-card reveal" data-tilt="4">
+            <span class="why-num">02</span>
+            <h3>AI-native from the first commit</h3>
+            <p>Intelligence is designed into the product from day one — search, recommendations, automation — not bolted on afterward as a chatbot.</p>
+          </article>
+          <article class="why-card reveal" data-tilt="4">
+            <span class="why-num">03</span>
+            <h3>One partner, whole lifecycle</h3>
+            <p>Idea, architecture, build, launch, scale, support. No handoffs between vendors, no lost context, one team accountable throughout.</p>
+          </article>
+          <article class="why-card reveal" data-tilt="4">
+            <span class="why-num">04</span>
+            <h3>Startup speed, senior discipline</h3>
+            <p>A small senior team that ships MVPs in weeks — with the testing, documentation, and DevOps discipline your future self will thank you for.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- SERVICES -->
-    <section class="section section-alt" id="services">
+    <section class="section" id="services">
       <div class="container">
         <p class="eyebrow reveal">Services</p>
         <h2 class="reveal">Consulting &amp; engineering,<br />under one roof</h2>
         <p class="section-lede reveal">Senior-level help for teams that need to move fast without breaking things.</p>
+        <div class="pain-grid">
+          <figure class="pain-card reveal">
+            <blockquote>"I have an idea but no technical team."</blockquote>
+            <figcaption>→ Product engineering, idea to launch</figcaption>
+          </figure>
+          <figure class="pain-card reveal">
+            <blockquote>"I want AI in my product but don't know where to start."</blockquote>
+            <figcaption>→ AI solutions, designed in from day one</figcaption>
+          </figure>
+          <figure class="pain-card reveal">
+            <blockquote>"Our tools don't talk to each other."</blockquote>
+            <figcaption>→ Full-stack engineering + integrations</figcaption>
+          </figure>
+        </div>
         <div class="bento">
           <article class="bento-card bento-wide reveal" data-tilt="4">
             <div class="card-icon">◈</div>
@@ -179,6 +220,46 @@
             <div class="card-icon">◎</div>
             <h3>Technical Consulting</h3>
             <p>Architecture reviews, technology strategy, and hands-on guidance for teams at inflection points. Honest advice, no sales pitch.</p>
+          </article>
+        </div>
+        <div class="stack-strip reveal">
+          <span class="stack-label">The stack we build on</span>
+          <ul class="stack-pills">
+            <li>Next.js</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Strapi</li>
+            <li>Swift / iOS</li>
+            <li>PostgreSQL</li>
+            <li>Docker</li>
+            <li>AWS</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENGAGEMENT -->
+    <section class="section section-alt" id="engage">
+      <div class="container">
+        <p class="eyebrow reveal">Ways to work with us</p>
+        <h2 class="reveal">Pick the shape that fits<br />your scope.</h2>
+        <p class="section-lede reveal">Four ways to engage — from a tightly scoped build to a team that grows with you.</p>
+        <div class="engage-grid">
+          <article class="engage-card reveal" data-tilt="4">
+            <h3>Fixed-Scope Build</h3>
+            <p>A defined product, price, and delivery date. Best when the requirements are already clear.</p>
+          </article>
+          <article class="engage-card reveal" data-tilt="4">
+            <h3>Dedicated Product Team</h3>
+            <p>A senior team in weekly sprints, with a demo every sprint — for roadmaps that keep evolving.</p>
+          </article>
+          <article class="engage-card reveal" data-tilt="4">
+            <h3>Flexible Retainer</h3>
+            <p>A stable core team with elastic capacity for the months that need more hands.</p>
+          </article>
+          <article class="engage-card reveal" data-tilt="4">
+            <h3>Ongoing Support</h3>
+            <p>Monitoring, maintenance, and enhancements under a standing agreement once you're live.</p>
           </article>
         </div>
       </div>
@@ -212,20 +293,26 @@
     <section class="section section-alt" id="process">
       <div class="container">
         <p class="eyebrow reveal">How we work</p>
-        <h2 class="reveal">A simple, proven process</h2>
+        <h2 class="reveal">Four stages, a demo at every one</h2>
+        <p class="section-lede reveal">The same sequence runs whether it's a focused build or an evolving roadmap — you always see what's coming next.</p>
         <ol class="steps">
           <li class="reveal" data-tilt="4">
             <span class="step-num">01</span>
             <h3>Discover</h3>
-            <p>We dig into your goals, users, and constraints to define exactly what needs building — and what doesn't.</p>
+            <p>We map your goals, users, constraints, and the one metric that matters — before anything is designed.</p>
           </li>
           <li class="reveal" data-tilt="4">
             <span class="step-num">02</span>
-            <h3>Design &amp; Build</h3>
-            <p>Iterative development with regular demos, so you see progress every week and can steer as we go.</p>
+            <h3>Design</h3>
+            <p>Architecture decisions and interface flows, documented so the reasoning survives the project.</p>
           </li>
           <li class="reveal" data-tilt="4">
             <span class="step-num">03</span>
+            <h3>Build</h3>
+            <p>Weekly sprints with a working demo every sprint — you see progress constantly and steer as we go.</p>
+          </li>
+          <li class="reveal" data-tilt="4">
+            <span class="step-num">04</span>
             <h3>Launch &amp; Support</h3>
             <p>Careful deployment, monitoring, and hands-on support to keep everything running smoothly after go-live.</p>
           </li>
@@ -250,6 +337,22 @@
           <div class="acc-item">
             <button class="acc-btn" aria-expanded="false">Do you take on consulting clients?<span class="acc-icon">+</span></button>
             <div class="acc-panel"><p>Yes. We take on a small number of consulting engagements — product builds, technical audits, and architecture guidance. Reach out with your goals and we'll tell you honestly if we're a fit.</p></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-btn" aria-expanded="false">How long does it take to build an MVP?<span class="acc-icon">+</span></button>
+            <div class="acc-panel"><p>A focused MVP typically ships in weeks, not quarters — the exact timeline depends on scope. We commit to a delivery date in a written statement of work before we start, and demo progress every sprint.</p></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-btn" aria-expanded="false">How do your engagements work?<span class="acc-icon">+</span></button>
+            <div class="acc-panel"><p>Four ways: a Fixed-Scope Build with a set price and date, a Dedicated Product Team for evolving roadmaps, a Flexible Retainer for steady capacity, or Ongoing Support once you're live. Pick the shape that fits how defined your scope is.</p></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-btn" aria-expanded="false">What technologies do you work with?<span class="acc-icon">+</span></button>
+            <div class="acc-panel"><p>Modern web and mobile stacks — React/Next.js, Node.js, Strapi, native iOS, PostgreSQL, Docker, and cloud infrastructure. We pick the stack that fits the product, not the other way around.</p></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-btn" aria-expanded="false">How much does a project cost?<span class="acc-icon">+</span></button>
+            <div class="acc-panel"><p>Fixed pricing for scoped builds, monthly retainers for ongoing work. Every engagement starts with a written scope — reach out and we'll give you an honest number.</p></div>
           </div>
           <div class="acc-item">
             <button class="acc-btn" aria-expanded="false">Where are you based?<span class="acc-icon">+</span></button>
@@ -277,15 +380,15 @@
         <h2 class="reveal">Let's build something great.</h2>
         <p class="section-lede reveal">Tell us about your project or product idea — we reply to every serious inquiry.</p>
         <div class="contact-cards reveal">
-          <a class="contact-card" href="mailto:svrone.llc@gmail.com" data-tilt="5">
+          <a class="contact-card" href="mailto:admin@svrone.org" data-tilt="5">
             <span class="card-icon">✉</span>
             <h3>Email</h3>
-            <p>svrone.llc@gmail.com</p>
+            <p>admin@svrone.org</p>
           </a>
           <div class="contact-card" data-tilt="5">
             <span class="card-icon">◍</span>
-            <h3>Location</h3>
-            <p>Sacramento, California</p>
+            <h3>Address</h3>
+            <p>3400 Cottage Way, Ste G2 #35973<br />Sacramento, CA 95825</p>
           </div>
         </div>
       </div>
@@ -303,7 +406,9 @@
       </div>
       <nav class="footer-links" aria-label="Footer">
         <a href="#work">Work</a>
+        <a href="#why">Why us</a>
         <a href="#services">Services</a>
+        <a href="#engage">Ways to work</a>
         <a href="#about">About</a>
         <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
