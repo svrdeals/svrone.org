@@ -443,7 +443,6 @@ a.contact-card:hover { transform: translateY(-4px); border-color: rgba(200, 240,
 /* Footer */
 .site-footer { border-top: 1px solid var(--border); padding: 56px 0 0; background: var(--bg-alt); }
 .footer-grid { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 40px; padding-bottom: 44px; }
-.footer-tag { font-size: 0.9rem; margin-top: 12px; }
 .footer-links { display: flex; flex-direction: column; gap: 10px; }
 .footer-links a { text-decoration: none; color: var(--muted); font-size: 0.94rem; }
 .footer-links a:hover { color: var(--lime); }
