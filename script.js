@@ -203,7 +203,7 @@
         .then(function (r) { return r.json(); })
         .then(function (res) {
           if (res && res.success) {
-            note.textContent = "Message sent — we'll get back to you shortly.";
+            note.textContent = "Message sent. We'll get back to you shortly.";
             note.className = "form-note success";
             cform.reset();
           } else {
