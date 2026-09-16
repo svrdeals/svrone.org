@@ -379,16 +379,57 @@
         <p class="eyebrow reveal">Contact</p>
         <h2 class="reveal">Let's build something great.</h2>
         <p class="section-lede reveal">Tell us about your project or product idea — we reply to every serious inquiry.</p>
-        <div class="contact-cards reveal">
-          <a class="contact-card" href="mailto:admin@svrone.org" data-tilt="5">
-            <span class="card-icon">✉</span>
-            <h3>Email</h3>
-            <p>admin@svrone.org</p>
-          </a>
-          <div class="contact-card" data-tilt="5">
-            <span class="card-icon">◍</span>
-            <h3>Address</h3>
-            <p>3400 Cottage Way, Ste G2 #35973<br />Sacramento, CA 95825</p>
+        <div class="contact-grid">
+          <form class="contact-form reveal" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+            <input type="hidden" name="subject" value="New inquiry from svrone.org" />
+            <input type="hidden" name="from_name" value="svrone.org contact form" />
+            <input type="checkbox" name="botcheck" class="hidden-botcheck" tabindex="-1" autocomplete="off" />
+            <div class="form-row">
+              <div class="form-field">
+                <label for="cf-name">Name *</label>
+                <input id="cf-name" type="text" name="name" required autocomplete="name" placeholder="Your name" />
+              </div>
+              <div class="form-field">
+                <label for="cf-email">Email *</label>
+                <input id="cf-email" type="email" name="email" required autocomplete="email" placeholder="you@company.com" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="cf-company">Company</label>
+                <input id="cf-company" type="text" name="company" autocomplete="organization" placeholder="Company (optional)" />
+              </div>
+              <div class="form-field">
+                <label for="cf-budget">Budget range</label>
+                <select id="cf-budget" name="budget">
+                  <option value="">Select (optional)</option>
+                  <option>Under $5k</option>
+                  <option>$5k – $15k</option>
+                  <option>$15k – $50k</option>
+                  <option>$50k+</option>
+                  <option>Ongoing / retainer</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="cf-message">Project details *</label>
+              <textarea id="cf-message" name="message" rows="5" required placeholder="What are you building? Goals, timeline, anything that helps."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg magnetic" id="cf-submit">Send message</button>
+            <p class="form-note" id="cf-note" role="status" aria-live="polite"></p>
+          </form>
+          <div class="contact-side reveal">
+            <a class="contact-card" href="mailto:admin@svrone.org" data-tilt="5">
+              <span class="card-icon">✉</span>
+              <h3>Email</h3>
+              <p>admin@svrone.org</p>
+            </a>
+            <div class="contact-card" data-tilt="5">
+              <span class="card-icon">◍</span>
+              <h3>Address</h3>
+              <p>3400 Cottage Way, Ste G2 #35973<br />Sacramento, CA 95825</p>
+            </div>
           </div>
         </div>
       </div>
