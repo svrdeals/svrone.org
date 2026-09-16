@@ -179,4 +179,45 @@
   // Footer year
   var year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();
+
+  // Contact form -> Web3Forms (AJAX with inline status, native POST fallback if JS disabled)
+  var cform = document.getElementById("contact-form");
+  if (cform) {
+    cform.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var note = document.getElementById("cf-note");
+      var btn = document.getElementById("cf-submit");
+      if (!cform.checkValidity()) { cform.reportValidity(); return; }
+      btn.disabled = true;
+      var originalLabel = btn.textContent;
+      btn.textContent = "Sending…";
+      note.textContent = "";
+      note.className = "form-note";
+      var data = {};
+      new FormData(cform).forEach(function (v, k) { data[k] = v; });
+      fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify(data),
+      })
+        .then(function (r) { return r.json(); })
+        .then(function (res) {
+          if (res && res.success) {
+            note.textContent = "Message sent — we'll get back to you shortly.";
+            note.className = "form-note success";
+            cform.reset();
+          } else {
+            throw new Error("bad response");
+          }
+        })
+        .catch(function () {
+          note.textContent = "Something went wrong sending the form. Please email us directly at admin@svrone.org.";
+          note.className = "form-note error";
+        })
+        .finally(function () {
+          btn.disabled = false;
+          btn.textContent = originalLabel;
+        });
+    });
+  }
 })();
