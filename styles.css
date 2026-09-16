@@ -136,14 +136,6 @@ footer .brand-lockup { height: 40px; }
   display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 56px; align-items: center;
 }
 .hero-copy { min-width: 0; }
-.badge {
-  display: inline-flex; align-items: center; gap: 10px;
-  border: 1px solid var(--border); background: rgba(12,14,18,0.55);
-  backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
-  padding: 8px 18px; border-radius: 999px;
-  font-size: 0.85rem; font-weight: 500; color: var(--muted);
-}
-.badge .pulse-dot { color: var(--lime); }
 .hero-cta { display: flex; gap: 14px; margin: 38px 0 60px; flex-wrap: wrap; }
 /* Stats bar removed 2026-09-15 */
 
