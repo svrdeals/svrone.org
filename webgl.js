@@ -38,7 +38,7 @@ import * as THREE from 'three';
       positions[i * 3 + 1] = 0;
       positions[i * 3 + 2] = (z / COUNT_Z - 0.5) * 15;
       const r = Math.random();
-      const c = r < 0.1 ? lime : r < 0.45 ? pale : dim;
+      const c = r < 0.22 ? lime : r < 0.5 ? pale : dim;
       colors[i * 3] = c.r;
       colors[i * 3 + 1] = c.g;
       colors[i * 3 + 2] = c.b;
@@ -49,15 +49,15 @@ import * as THREE from 'three';
   waveGeo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
   waveGeo.setAttribute('color', new THREE.BufferAttribute(colors, 3));
   const waveMat = new THREE.PointsMaterial({
-    size: 0.055,
+    size: 0.075,
     vertexColors: true,
     transparent: true,
-    opacity: 0.8,
+    opacity: 0.92,
     depthWrite: false,
     blending: THREE.AdditiveBlending,
   });
   const wave = new THREE.Points(waveGeo, waveMat);
-  wave.position.y = -1.5;
+  wave.position.y = -1.05;
   wave.rotation.x = -0.32;
   scene.add(wave);
 
@@ -113,8 +113,8 @@ import * as THREE from 'three';
       const px = positions[k * 3];
       const pz = positions[k * 3 + 2];
       posAttr.array[k * 3 + 1] =
-        Math.sin(px * 0.5 + t * 1.05) * 0.36 +
-        Math.cos(pz * 0.65 + t * 0.8) * 0.3;
+        Math.sin(px * 0.5 + t * 1.05) * 0.42 +
+        Math.cos(pz * 0.65 + t * 0.8) * 0.34;
     }
     posAttr.needsUpdate = true;
   }
